@@ -1,0 +1,78 @@
+*Auction Class*
+
+Variables
+-bid
+-seller
+-object //must be a .gif **
+-minBid
+-bidDict
+  -hashmap of wallet address and arraylist of placed bids for a person
+-highest bidder
+-second highest bidder
+-auction time
+-auction money
+  -contains all money bid for the auction
+
+Methods
+
+
+-bid method
+  -bid must be greater than minBid
+  -takes bid and wallet id
+  -updates bidDict array with bid
+  -updates highest bidder variable
+  -moves previous highest bidder to second highest bidder variable
+  -collects amounbt from user wallet
+  -adds 1 hour to auction time
+-display highest bidder
+
+bid ends
+  -if auction time = 0, auction closes
+    -sends item and 50% of auction money to second place
+    -returns 50% of investment to each bidder
+rate
+  second place receives notice to rate seller, updates seller's auction rating
+-archive
+  -adds auction to AuctionWebsite past listings
+  -num between 1 and 10
+
+
+
+*Profile Class*
+
+Variables
+-wallet
+-auction items
+  -table of all gifs they've won
+-auction rating
+  -average of all ratings, will be 1-10
+-auctions completed
+-past listings
+-current listings
+-past bids
+
+Methods
+
+Create AUCTION
+  -creates new auction needs: object, min bid,  seller wallet
+  -adds auction to current listings in AuctionWebsite
+
+
+*AuctionWebsite class*
+
+Variables
+
+-all present/past listings
+-all present/past listers
+-all present/past bidders
+
+
+
+*Admin Class*
+
+
+Methods
+-DeleteAuction
+-RemoveBidder
+-RemoveSeller
+-viewBidders
