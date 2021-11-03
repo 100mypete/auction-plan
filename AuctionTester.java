@@ -15,11 +15,12 @@ public class AuctionTester {
 				
 		bike.makeBid(harold, 3.0, false);
 		bike.makeBid(harold, 4.0, false);
-		bike.makeBid(richard, 3.1, false);
+		bike.makeBid(richard, 4.5, false);
+		bike.makeBid(rohan, 2.0, false);
 		bike.makeBid(girl, 4.5, false);
 		bike.makeBid(rohan, 5.0, false);
 		
-		bike.makeBid(girl, 5.0, true);
+		bike.makeBid(girl, 5.0, true); // ends the auction
 		
 		System.out.println(harold.getBalance());
 		System.out.println(richard.getsuccessfullAuctions());
