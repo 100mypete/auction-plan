@@ -23,9 +23,14 @@ public class AuctionTester {
 		
 		wheel.makeBid(richard, 1.0, false);
 		wheel.makeBid(richard, 2.0, false);
+		
+		wheel.makeBid(rohan, 3.0, false);
+		wheel.makeBid(harold, 5.0, false);
 		wheel.makeBid(richard, 0.0, true);
 		
 		System.out.println(richard.getBalance());
+		System.out.println(harold.getBalance());
+		System.out.println(rohan.getBalance());
 		
 		bike.makeBid(girl, 4.5, false);
 		bike.makeBid(rohan, 5.0, false);
