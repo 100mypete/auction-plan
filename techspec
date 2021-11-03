@@ -1,7 +1,6 @@
 *Auction Class*
 
 Variables
--bid
 -seller
 -object //must be a .gif **
 -minBid
