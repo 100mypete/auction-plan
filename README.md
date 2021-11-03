@@ -4,7 +4,7 @@
 
 The code all seems to work but functionality is used more as a prototype
 
-Timer is not functional but there is a variable that represents timing, instead to simulate the ending of an auction the makeBid method has a variable that if set to true ends the auction (and doesn't execute that bid) 
+Timer is not functional but there is a variable that represents timing, instead to simulate the ending of an auction the makeBid method has a parameter that if set to true ends the auction (and doesn't execute that bid) 
 Created an Auction class and a User class
 
 Returning 50% works but I had to make some interpretation of the design that didn't specify certain things:
