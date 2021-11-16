@@ -9,26 +9,6 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_nft",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_nftId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address payable",
-						"name": "_seller",
-						"type": "address"
-					},
-					{
-						"internalType": "address",
 						"name": "_winner",
 						"type": "address"
 					}
@@ -108,6 +88,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_nft",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_nftId",
+						"type": "uint256"
+					}
+				],
+				"name": "setNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "win",
 				"outputs": [],
@@ -172,11 +170,11 @@
 			]
 		},
 		"WinAuction.sol": {
-			"keccak256": "0x7dfc09f2e0a581e1bef6e903c9b6c6684b65268ee9435ee0c37b315ba74d3890",
+			"keccak256": "0x954b9d852ea8f1b8316637284dd24e6deb61c59e97d989649055eb6777f9c645",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://320e2cc862a75faf32d1feadea84ced867cc8b66b221fc2c95defbbf38a87145",
-				"dweb:/ipfs/QmVQzUhXQxQC3BGBTTNff1RDZNcEXPR9fyG9SNhhqRF7tX"
+				"bzz-raw://860f3512348018a6dbd2a3bd8e750622df1f27c72419ead6a3752f6bc770ae3d",
+				"dweb:/ipfs/QmWo2bqBBMouoovqvabWu9jEb8YvSn1Qj9zEfHs1XReVF6"
 			]
 		}
 	},

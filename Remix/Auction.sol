@@ -85,15 +85,15 @@ contract Auction{
             //do nothing
         }
         else{
-            address payable sellerPayable = payable(seller);
-            winAuction(_nft, _nftID, highest, sellerPayable, highestBidAmount);
+            //address payable sellerPayable = payable(seller);
+            winAuction(highest);
         }
        //i would like to implement people receiving 50% of their bids back and my code is set up it is possible,
        //I am just not sure if its logistically possible because theres no way for people to just gain money without receiving from someone
     }
     
-    function winAuction(address _nft, uint _nftID, address winner, address payable _seller, uint256 amount) internal{
-        WinAuction win = new WinAuction(_nft, _nftID, amount, _seller, winner);
+    function winAuction(address winner) internal{
+        WinAuction win = new WinAuction(winner);
       
         win.win();
        

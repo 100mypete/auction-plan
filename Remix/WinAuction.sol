@@ -8,8 +8,6 @@ pragma solidity >=0.8.9;
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 
 
-
-
 contract WinAuction {
     
     event Win(address winner, uint256 amount);
@@ -21,26 +19,22 @@ contract WinAuction {
     address payable public seller;
     address public winner;
 
-    constructor(
-        address _nft,
-        uint _nftId,
-        uint256 _amount,
-        address payable _seller,
-        address _winner
-    ) {
+    constructor(address _winner) {
         seller = payable(msg.sender);
+        
+        winner = _winner;
+    }
+    
+    function setNFT(address _nft, uint _nftId) public{
         nft = IERC721(_nft);
         nftId = _nftId;
-        amount = _amount;
-        seller = _seller;
-        winner = _winner;
     }
 
     // Winds the auction for the specified amount
     function win() external payable {
         
         nft.safeTransferFrom(seller, winner, nftId);
-        seller.transfer(amount);
+        seller.transfer(msg.value);
 
         emit Win(winner, amount);
     }
