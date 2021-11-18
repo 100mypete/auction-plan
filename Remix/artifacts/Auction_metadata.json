@@ -30,6 +30,26 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "endAuction",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "makeBid",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -42,7 +62,46 @@
 						"type": "uint256"
 					}
 				],
-				"name": "endAuction",
+				"name": "makeNFT",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nft",
+				"outputs": [
+					{
+						"internalType": "contract IERC721",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nftID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_auctionTime",
+						"type": "uint256"
+					}
+				],
+				"name": "setAuctionTime",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -51,11 +110,11 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "_minBidAmount",
 						"type": "uint256"
 					}
 				],
-				"name": "makeBid",
+				"name": "setMinBidAmount",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -105,19 +164,19 @@
 			]
 		},
 		"Auction.sol": {
-			"keccak256": "0x8f30a869a1e63e87baf4d8f0699b5e91fc1e7ca7f9bdd4d773eede3b0167cdb4",
+			"keccak256": "0xa82619063c84c9ca23330a146f061cd2592355936d67f9bb2701244ae51dec84",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://62d1333d2aa4f798fb4c13c9ebd0094dbd6eaa40d37da8205f08ace23f258f5d",
-				"dweb:/ipfs/QmUa9FSzJhsn5a7MjUbKJRUmQjvYJmSLiGAm4rVQENYagY"
+				"bzz-raw://eecca8d4bff9ac3086d8cc4e2e494c46e85286e3f1b07f74adbd3737baecf86e",
+				"dweb:/ipfs/QmNU2j78szQ6VsgAabzBzQ97aZ6PCwCS6XCvfFYKQUCYLP"
 			]
 		},
 		"WinAuction.sol": {
-			"keccak256": "0x7dfc09f2e0a581e1bef6e903c9b6c6684b65268ee9435ee0c37b315ba74d3890",
+			"keccak256": "0x954b9d852ea8f1b8316637284dd24e6deb61c59e97d989649055eb6777f9c645",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://320e2cc862a75faf32d1feadea84ced867cc8b66b221fc2c95defbbf38a87145",
-				"dweb:/ipfs/QmVQzUhXQxQC3BGBTTNff1RDZNcEXPR9fyG9SNhhqRF7tX"
+				"bzz-raw://860f3512348018a6dbd2a3bd8e750622df1f27c72419ead6a3752f6bc770ae3d",
+				"dweb:/ipfs/QmWo2bqBBMouoovqvabWu9jEb8YvSn1Qj9zEfHs1XReVF6"
 			]
 		}
 	},
